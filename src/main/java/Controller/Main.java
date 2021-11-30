@@ -2,17 +2,17 @@
 package Controller;
 
 import Model.Histogram;
-import Model.MailHistogramBuilder;
-import Model.MailListReader;
+import View.MailHistogramBuilder;
+import View.MailListReader;
 import View.HistogramDisplay;
-import View.Mail;
+import Model.Mail;
 import java.util.List;
 
 public class Main {
     private List<Mail> mailList;
     private Histogram<String> histo;
     private HistogramDisplay histogramDisplay;
-    private String fileName;
+    private final String fileName;
 
     public Main(String fileName) {
         this.fileName = fileName;
@@ -41,6 +41,5 @@ public class Main {
         input();
         process();
         output();
-        
     }
 }

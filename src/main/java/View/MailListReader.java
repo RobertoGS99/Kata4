@@ -1,7 +1,7 @@
 
-package Model;
+package View;
 
-import View.Mail;
+import Model.Mail;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
